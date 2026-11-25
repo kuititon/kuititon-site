@@ -1,6 +1,6 @@
 # kuititon.com website
 
-Static site: `index.html` (start), `yritys.html` (Business), `projekti.html` (Project), `sovellus.html` (App).
+Static site: `index.html` (start), `yritys.html` (Business), `projekti.html` (Project), `sovellus.html` (App), `tietosuoja.html` (Privacy policy) and `kayttoehdot.html` (Terms of use).
 Finnish text is in the markup; English is in each element's `data-en` attribute and switched by `assets/site.js`.
 
 ## Publish with GitHub Pages
