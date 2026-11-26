@@ -481,3 +481,6 @@ html:not([lang=en]) .legal .en{display:none}
 
 .ico-lock{width:1.05em;height:1.05em;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .with-ico{display:inline-flex;align-items:center;gap:8px}
+
+.applink{color:var(--accent-text);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.applink:hover{text-decoration-thickness:2px}
