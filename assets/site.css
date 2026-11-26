@@ -478,3 +478,6 @@ html:not([lang=en]) .legal .en{display:none}
 .legal-doc ul{padding-left:1.25em;margin:8px 0}
 .legal-doc li{margin:6px 0}
 .legal-doc a{color:var(--accent-text);text-decoration:underline;text-underline-offset:2px;overflow-wrap:anywhere}
+
+.ico-lock{width:1.05em;height:1.05em;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.with-ico{display:inline-flex;align-items:center;gap:8px}
