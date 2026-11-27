@@ -45,6 +45,7 @@
 <li><strong>Asetukset:</strong> kieli, kategoriat, yksiköt ja muut sovelluksen asetukset.</li>
 <li><strong>Tilaus- ja maksutiedot:</strong> tilausmaksut käsittelee Stripe. Emme tallenna korttitietojasi; saamme vain tiedon tilauksen tilasta.</li>
 <li><strong>Tekniset tiedot:</strong> palvelimet ja palveluntarjoajat voivat tallentaa tilapäisesti IP-osoitteen ja selaintiedot tietoturvan ja häiriöiden selvittämisen vuoksi.</li>
+<li><strong>Palaute:</strong> Asetuksista lähetetty palaute tallennetaan ilman käyttäjätunnusta tai sähköpostiosoitetta. Mukana tallentuvat vain tilauksen taso, kieli ja laitetyyppi.</li>
 </ul>
 <p>Emme kerää erityisiin henkilötietoryhmiin kuuluvia tietoja tarkoituksella. Pyydämme, ettet tallenna sovellukseen tällaisia tietoja.</p>
 <h2>3. Käsittelyn tarkoitukset ja oikeusperusteet</h2>
@@ -53,6 +54,7 @@
 <li><strong>Maksut ja tilausten hallinta:</strong> sopimuksen täyttäminen ja lakisääteiset velvoitteet, kuten kirjanpitovelvollisuus (6(1)(b) ja (c)).</li>
 <li><strong>Tietoturva, väärinkäytösten estäminen ja palvelun kehittäminen:</strong> oikeutettu etu (6(1)(f)).</li>
 <li><strong>Tuki ja viestintä:</strong> sopimuksen täyttäminen ja oikeutettu etu. Palveluviestit (esim. salasanan palautus) lähetetään ilman suostumusta; markkinointiviestejä lähetetään vain suostumuksellasi.</li>
+<li><strong>Kuittien automaattinen lukeminen:</strong> sopimuksen täyttäminen (6(1)(b)).</li>
 </ul>
 <h2>4. Evästeet ja paikallinen tallennus</h2>
 <p>kuititon sovellus käyttää selaimen paikallista tallennusta (localStorage) vain palvelun toiminnan kannalta välttämättömiin asioihin, kuten kirjautumisen ylläpitoon ja asetuksiin. Emme käytä mainos- tai seurantaevästeitä.</p>
@@ -62,6 +64,8 @@
 <li><strong>Supabase</strong> – tietokanta, kirjautuminen ja tiedostojen tallennus. Tiedot tallennetaan EU-alueella (Frankfurt, Saksa).</li>
 <li><strong>Stripe</strong> – tilausmaksut.</li>
 <li><strong>Resend</strong> – kirjautumis- ja palveluviestien lähetys.</li>
+<li><strong>Anthropic</strong> – kuittien automaattinen lukeminen. Kun skannaat kuitin tai dokumentin, sen kuva (PDF-tiedostosta myös tekstisisältö) lähetetään Anthropicin tekoälymallille, joka palauttaa tiedot esitäytettäväksi. Tietoja lähetetään vain skannauksen yhteydessä. Anthropic voi käsitellä tietoja EU/ETA-alueen ulkopuolella.</li>
+<li><strong>Cloudflare Turnstile</strong> – botintunnistus kirjautumisessa, rekisteröitymisessä ja salasanan palautuksessa. Cloudflare voi käsitellä IP-osoitetta ja selaintietoja.</li>
 <li><strong>GitHub Pages (verkkosivusto) ja Cloudflare Pages (sovellus)</strong> – sivuston ja sovelluksen tarjoaminen.</li>
 </ul>
 <p>Jos jokin palveluntarjoaja käsittelee tietoja EU/ETA-alueen ulkopuolella, siirrot perustuvat EU:n vakiolausekkeisiin tai muuhun GDPR:n sallimaan siirtoperusteeseen. Emme myy henkilötietoja.</p>
@@ -101,6 +105,7 @@
 <li><strong>Settings:</strong> language, categories, units and other app settings.</li>
 <li><strong>Subscription and payment data:</strong> subscription payments are processed by Stripe. We do not store your card details; we only receive the status of your subscription.</li>
 <li><strong>Technical data:</strong> servers and service providers may temporarily record IP addresses and browser details for security and troubleshooting.</li>
+<li><strong>Feedback:</strong> feedback sent from Settings is stored without your user ID or email address. Only your plan, language and device type are saved with it.</li>
 </ul>
 <p>We do not intentionally collect special categories of personal data. Please do not store such data in the app.</p>
 <h2>3. Purposes and legal bases</h2>
@@ -109,6 +114,7 @@
 <li><strong>Payments and subscription management:</strong> performance of a contract and legal obligations such as accounting rules (Art. 6(1)(b) and (c)).</li>
 <li><strong>Security, preventing abuse and improving the service:</strong> legitimate interests (Art. 6(1)(f)).</li>
 <li><strong>Support and communication:</strong> performance of a contract and legitimate interests. Service messages (for example password reset) are sent without consent; marketing messages are sent only with your consent.</li>
+<li><strong>Automatic receipt reading:</strong> performance of a contract (Art. 6(1)(b)).</li>
 </ul>
 <h2>4. Cookies and local storage</h2>
 <p>The kuititon app uses your browser's local storage only for things that are necessary to run the service, such as keeping you signed in and remembering settings. We do not use advertising or tracking cookies.</p>
@@ -118,6 +124,8 @@
 <li><strong>Supabase</strong> – database, authentication and file storage. Data is stored in the EU (Frankfurt, Germany).</li>
 <li><strong>Stripe</strong> – subscription payments.</li>
 <li><strong>Resend</strong> – sending sign-in and service emails.</li>
+<li><strong>Anthropic</strong> – automatic receipt reading. When you scan a receipt or document, its image (and the text content of a PDF) is sent to Anthropic's AI model, which returns the details for you to review. Data is sent only when you scan. Anthropic may process data outside the EU/EEA.</li>
+<li><strong>Cloudflare Turnstile</strong> – bot check when signing in, registering and resetting a password. Cloudflare may process your IP address and browser details.</li>
 <li><strong>GitHub Pages (website) and Cloudflare Pages (app)</strong> – serving the website and the app.</li>
 </ul>
 <p>If a provider processes data outside the EU/EEA, transfers rely on the EU Standard Contractual Clauses or another transfer mechanism allowed by the GDPR. We do not sell personal data.</p>
